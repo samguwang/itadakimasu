@@ -20,6 +20,15 @@ class NavigationBarAppearance: UINavigationController {
         navBar.translucent = false
         UIBarButtonItem.appearance().setTitleTextAttributes([ NSFontAttributeName: UIFont(name: "HelveticaNeue-Thin", size: 12)!], forState: UIControlState.Normal)
         navBar.barStyle = UIBarStyle.Black
+        
+        //Remove hairline pixel seperating navbar and background
+        UINavigationBar.appearance().setBackgroundImage(
+            UIImage(),
+            forBarPosition: .Any,
+            barMetrics: .Default)
+        
+        UINavigationBar.appearance().shadowImage = UIImage()
+    
 
         
         

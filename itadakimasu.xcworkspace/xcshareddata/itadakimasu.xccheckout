@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3873CA07-3B66-4B24-9902-D157A08B57C7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>itadakimasu</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>12A4996719809C0928EA9E6C14B03F11B3EC48C9</key>
+		<string>https://github.com/samguwang/itadakimasu.git</string>
+		<key>C6313786846A3F4DF93B48CE6DCAFEC3AB08F64B</key>
+		<string>https://github.com/samguwang/HungryYeti.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>itadakimasu.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>12A4996719809C0928EA9E6C14B03F11B3EC48C9</key>
+		<string>..</string>
+		<key>C6313786846A3F4DF93B48CE6DCAFEC3AB08F64B</key>
+		<string>../../HungryYeti</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/samguwang/itadakimasu.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>12A4996719809C0928EA9E6C14B03F11B3EC48C9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C6313786846A3F4DF93B48CE6DCAFEC3AB08F64B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HungryYeti</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>12A4996719809C0928EA9E6C14B03F11B3EC48C9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>itadakimasu</string>
+		</dict>
+	</array>
+</dict>
+</plist>
