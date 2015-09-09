@@ -137,10 +137,10 @@
 				B28F1B1B1B95F0D40068463D /* AppDelegate.swift */,
 				B2E0AAD91B976A8500D10DBD /* NavigationBarAppearance.swift */,
 				B28F1B1D1B95F0D40068463D /* ViewController.swift */,
-				B28F1B1F1B95F0D40068463D /* Main.storyboard */,
-				B252D4CD1B9FCBE500F30314 /* Launch Screen.xib */,
 				B252D4CF1B9FE0CF00F30314 /* Business.swift */,
 				B252D4D11B9FE0F300F30314 /* YelpAPIClient.swift */,
+				B28F1B1F1B95F0D40068463D /* Main.storyboard */,
+				B252D4CD1B9FCBE500F30314 /* Launch Screen.xib */,
 				B28F1B221B95F0D40068463D /* Images.xcassets */,
 				B28F1B191B95F0D40068463D /* Supporting Files */,
 			);

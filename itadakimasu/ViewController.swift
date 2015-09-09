@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
 
+    let locationManager:CLLocationManager = CLLocationManager()
+    var currentLocation:CLLocation?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //self.navigationItem.title = "ITADAKIMASU"
-        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
         
     }
 
@@ -23,6 +29,27 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //locationmanager delegate function from CLLocationManager, called when user location updated
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        println("callign location manager")
+        //store location in location variable of type CLLocation
+        var location:CLLocation = locations[locations.count-1] as! CLLocation
+        println(location)
+        //check for location accuracy and stop when accurate enough
+        if (location.horizontalAccuracy > 0) {
+            self.locationManager.stopUpdatingLocation()
+            self.currentLocation = location
+        }
+    }
+    
+    //locationManager delegate function if failure
+    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+        println(error)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+    }
 
 }
 

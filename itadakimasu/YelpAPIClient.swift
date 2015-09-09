@@ -18,8 +18,6 @@ let yelpToken = "VMKgIAyZFW2AF1CQ_GW_3qaCxsS3LHUj"
 let yelpTokenSecret = "9dfGC-nfwaHYVaF493cg1xidJcU"
 
 
-
-
 //incorporate BDBOAuth1Manager pod for authentication to Yelp API
 class YelpAPIClient: BDBOAuth1RequestOperationManager{
     

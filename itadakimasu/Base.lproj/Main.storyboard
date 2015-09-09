@@ -130,6 +130,11 @@
                                 <exclude reference="0XT-rb-aLc"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="ByG-1s-EZn"/>
+                                <exclude reference="KTX-vz-9dZ"/>
+                                <exclude reference="j1b-ZG-bBp"/>
+                                <exclude reference="OLl-iU-vko"/>
+                                <exclude reference="cXF-To-TBP"/>
                                 <exclude reference="DU6-5W-LMa"/>
                                 <exclude reference="EDb-Lf-dbq"/>
                                 <exclude reference="Gu0-iZ-qyo"/>
@@ -145,11 +150,6 @@
                                 <exclude reference="LFh-Wy-SL6"/>
                                 <exclude reference="oVh-7S-dpO"/>
                                 <exclude reference="t3G-6B-8G6"/>
-                                <exclude reference="ByG-1s-EZn"/>
-                                <exclude reference="KTX-vz-9dZ"/>
-                                <exclude reference="j1b-ZG-bBp"/>
-                                <exclude reference="OLl-iU-vko"/>
-                                <exclude reference="cXF-To-TBP"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -159,6 +159,11 @@
                                 <include reference="0XT-rb-aLc"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="ByG-1s-EZn"/>
+                                <include reference="KTX-vz-9dZ"/>
+                                <include reference="j1b-ZG-bBp"/>
+                                <exclude reference="OLl-iU-vko"/>
+                                <exclude reference="cXF-To-TBP"/>
                                 <exclude reference="DU6-5W-LMa"/>
                                 <exclude reference="EDb-Lf-dbq"/>
                                 <exclude reference="Gu0-iZ-qyo"/>
@@ -174,11 +179,6 @@
                                 <exclude reference="LFh-Wy-SL6"/>
                                 <include reference="oVh-7S-dpO"/>
                                 <include reference="t3G-6B-8G6"/>
-                                <include reference="ByG-1s-EZn"/>
-                                <include reference="KTX-vz-9dZ"/>
-                                <include reference="j1b-ZG-bBp"/>
-                                <exclude reference="OLl-iU-vko"/>
-                                <exclude reference="cXF-To-TBP"/>
                             </mask>
                         </variation>
                     </view>
