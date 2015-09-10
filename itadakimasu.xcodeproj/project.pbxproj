@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C546BA24270C60292A9B7B3 /* libPods-itadakimasu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AC4A3FBD3C039BB80C3229 /* libPods-itadakimasu.a */; };
+		6C508D0C91506722FCEDCA75 /* libPods-itadakimasu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AC4A3FBD3C039BB80C3229 /* libPods-itadakimasu.a */; };
 		B252D4CE1B9FCBE500F30314 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B252D4CD1B9FCBE500F30314 /* Launch Screen.xib */; };
 		B252D4D01B9FE0CF00F30314 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = B252D4CF1B9FE0CF00F30314 /* Business.swift */; };
 		B252D4D21B9FE0F300F30314 /* YelpAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B252D4D11B9FE0F300F30314 /* YelpAPIClient.swift */; };
@@ -24,7 +24,6 @@
 		B2E0AADA1B976A8500D10DBD /* NavigationBarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E0AAD91B976A8500D10DBD /* NavigationBarAppearance.swift */; };
 		B2E0AADC1B9FBCAF00D10DBD /* eatlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E0AADB1B9FBCAF00D10DBD /* eatlogo.png */; };
 		B2E0AADE1B9FBE7F00D10DBD /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E0AADD1B9FBE7F00D10DBD /* arrow.png */; };
-		C934D357CAE0EACD98325316 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B945EEF48E423CDE62F15DE /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C934D357CAE0EACD98325316 /* libPods.a in Frameworks */,
-				2C546BA24270C60292A9B7B3 /* libPods-itadakimasu.a in Frameworks */,
+				6C508D0C91506722FCEDCA75 /* libPods-itadakimasu.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
