@@ -16,6 +16,7 @@
 		B28F1B211B95F0D40068463D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28F1B1F1B95F0D40068463D /* Main.storyboard */; };
 		B28F1B231B95F0D40068463D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28F1B221B95F0D40068463D /* Images.xcassets */; };
 		B28F1B321B95F0D50068463D /* itadakimasuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F1B311B95F0D50068463D /* itadakimasuTests.swift */; };
+		B2E082551BA2340F00D3D3CC /* BusinessInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E082541BA2340F00D3D3CC /* BusinessInformationViewController.swift */; };
 		B2E0AAD41B9755EE00D10DBD /* iphone3.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E0AACF1B9755EE00D10DBD /* iphone3.png */; };
 		B2E0AAD51B9755EE00D10DBD /* iphone4.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E0AAD01B9755EE00D10DBD /* iphone4.png */; };
 		B2E0AAD61B9755EE00D10DBD /* iphone5.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E0AAD11B9755EE00D10DBD /* iphone5.png */; };
@@ -53,6 +54,7 @@
 		B28F1B2B1B95F0D50068463D /* itadakimasuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = itadakimasuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28F1B301B95F0D50068463D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B28F1B311B95F0D50068463D /* itadakimasuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itadakimasuTests.swift; sourceTree = "<group>"; };
+		B2E082541BA2340F00D3D3CC /* BusinessInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessInformationViewController.swift; sourceTree = "<group>"; };
 		B2E0AACF1B9755EE00D10DBD /* iphone3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iphone3.png; path = Graphics/iphone3.png; sourceTree = "<group>"; };
 		B2E0AAD01B9755EE00D10DBD /* iphone4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iphone4.png; path = Graphics/iphone4.png; sourceTree = "<group>"; };
 		B2E0AAD11B9755EE00D10DBD /* iphone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iphone5.png; path = Graphics/iphone5.png; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				B28F1B1B1B95F0D40068463D /* AppDelegate.swift */,
 				B2E0AAD91B976A8500D10DBD /* NavigationBarAppearance.swift */,
 				B28F1B1D1B95F0D40068463D /* ViewController.swift */,
+				B2E082541BA2340F00D3D3CC /* BusinessInformationViewController.swift */,
 				B252D4CF1B9FE0CF00F30314 /* Business.swift */,
 				B252D4D11B9FE0F300F30314 /* YelpAPIClient.swift */,
 				B28F1B1F1B95F0D40068463D /* Main.storyboard */,
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B28F1B1E1B95F0D40068463D /* ViewController.swift in Sources */,
+				B2E082551BA2340F00D3D3CC /* BusinessInformationViewController.swift in Sources */,
 				B252D4D01B9FE0CF00F30314 /* Business.swift in Sources */,
 				B28F1B1C1B95F0D40068463D /* AppDelegate.swift in Sources */,
 				B2E0AADA1B976A8500D10DBD /* NavigationBarAppearance.swift in Sources */,

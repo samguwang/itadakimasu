@@ -57,6 +57,9 @@
                                         <exclude reference="pb3-9q-oF1"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="ZUR-1b-M0T" kind="show" id="RBz-Bv-atx"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="i57-9U-OWy">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -186,7 +189,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1116" y="375"/>
+            <point key="canvasLocation" x="573" y="362.25"/>
+        </scene>
+        <!--Business Information View Controller-->
+        <scene sceneID="XRo-aO-0be">
+            <objects>
+                <viewController id="ZUR-1b-M0T" customClass="BusinessInformationViewController" customModule="itadakimasu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PLM-SN-KvU"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Lg-WR-Qax"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lUw-7n-hs2">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efe-Fz-f8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276.5" y="361.5"/>
         </scene>
         <!--Navigation Bar Appearance-->
         <scene sceneID="RtU-PF-ohF">
@@ -204,7 +224,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9X-Ds-I9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="392" y="760"/>
+            <point key="canvasLocation" x="-135" y="362.25"/>
         </scene>
     </scenes>
     <resources>

@@ -14,6 +14,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager:CLLocationManager = CLLocationManager()
     var currentLocation:CLLocation?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,7 +22,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,11 +34,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         println("callign location manager")
         //store location in location variable of type CLLocation
         var location:CLLocation = locations[locations.count-1] as! CLLocation
-        println(location)
         //check for location accuracy and stop when accurate enough
         if (location.horizontalAccuracy > 0) {
             self.locationManager.stopUpdatingLocation()
             self.currentLocation = location
+
         }
     }
     
@@ -47,8 +47,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         println(error)
     }
     
+    
+    func randRange (lower: Int , upper: Int) -> Int {
+        return lower + Int(arc4random_uniform(UInt32(upper - lower + 1)))
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
+        let destVC = segue.destinationViewController as! BusinessInformationViewController
+        destVC.Loc = self.currentLocation
     }
 
 }
