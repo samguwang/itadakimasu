@@ -16,10 +16,11 @@ class NavigationBarAppearance: UINavigationController {
         //format navigation controller across all views
         var navBar = self.navigationBar
         navBar.barTintColor = UIColor(red: 235/255, green: 116/255, blue: 57/255, alpha: 1)
-        navBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "futura-medium", size: 22)!,  NSForegroundColorAttributeName: UIColor.whiteColor()]
+        navBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "futura-medium", size: 24)!,  NSForegroundColorAttributeName: UIColor.whiteColor()]
         navBar.translucent = false
-        UIBarButtonItem.appearance().setTitleTextAttributes([ NSFontAttributeName: UIFont(name: "HelveticaNeue-Thin", size: 12)!], forState: UIControlState.Normal)
         navBar.barStyle = UIBarStyle.Black
+        navBar.tintColor = UIColor.whiteColor()
+
         
         //Remove hairline pixel seperating navbar and background
         UINavigationBar.appearance().setBackgroundImage(

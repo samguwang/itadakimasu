@@ -17,6 +17,7 @@ class BusinessInformationViewController: ViewController {
     var businesses: [Business]!
     
     override func viewDidLoad() {
+        self.navigationItem.title = "ITADAKIMASU"
         println(self.Loc)
         Business.searchByLocationRatingDistance("food", limit: 20, Lat: Loc!.coordinate.latitude, Long: Loc!.coordinate.longitude, sort: 0, categories: "restaurants", radius_filter: 2000, completion: { (businesses: [Business]!, error: NSError!) -> Void in
             self.businesses = businesses
