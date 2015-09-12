@@ -58,7 +58,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="ZUR-1b-M0T" kind="show" id="RBz-Bv-atx"/>
+                                    <segue destination="ZUR-1b-M0T" kind="show" id="CxE-tu-y4I"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="i57-9U-OWy">
@@ -208,11 +208,12 @@
             </objects>
             <point key="canvasLocation" x="1276.5" y="361.5"/>
         </scene>
-        <!--Navigation Bar Appearance-->
+        <!--Navigation Controller-->
         <scene sceneID="RtU-PF-ohF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ODS-aw-L8H" customClass="NavigationBarAppearance" customModule="itadakimasu" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ODS-aw-L8H" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uDp-5B-efc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

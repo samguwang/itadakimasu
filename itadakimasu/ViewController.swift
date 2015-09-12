@@ -31,7 +31,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     //locationmanager delegate function from CLLocationManager, called when user location updated
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        println("callign location manager")
+        println("calling location manager")
         //store location in location variable of type CLLocation
         var location:CLLocation = locations[locations.count-1] as! CLLocation
         //check for location accuracy and stop when accurate enough

@@ -22,7 +22,6 @@
 		B2E0AAD61B9755EE00D10DBD /* iphone5.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E0AAD11B9755EE00D10DBD /* iphone5.png */; };
 		B2E0AAD71B9755EE00D10DBD /* iphone6.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E0AAD21B9755EE00D10DBD /* iphone6.png */; };
 		B2E0AAD81B9755EE00D10DBD /* iphone6plus.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E0AAD31B9755EE00D10DBD /* iphone6plus.png */; };
-		B2E0AADA1B976A8500D10DBD /* NavigationBarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E0AAD91B976A8500D10DBD /* NavigationBarAppearance.swift */; };
 		B2E0AADC1B9FBCAF00D10DBD /* eatlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E0AADB1B9FBCAF00D10DBD /* eatlogo.png */; };
 		B2E0AADE1B9FBE7F00D10DBD /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E0AADD1B9FBE7F00D10DBD /* arrow.png */; };
 /* End PBXBuildFile section */
@@ -60,7 +59,6 @@
 		B2E0AAD11B9755EE00D10DBD /* iphone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iphone5.png; path = Graphics/iphone5.png; sourceTree = "<group>"; };
 		B2E0AAD21B9755EE00D10DBD /* iphone6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iphone6.png; path = Graphics/iphone6.png; sourceTree = "<group>"; };
 		B2E0AAD31B9755EE00D10DBD /* iphone6plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iphone6plus.png; path = Graphics/iphone6plus.png; sourceTree = "<group>"; };
-		B2E0AAD91B976A8500D10DBD /* NavigationBarAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarAppearance.swift; sourceTree = "<group>"; };
 		B2E0AADB1B9FBCAF00D10DBD /* eatlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eatlogo.png; path = ../HungryYeti/eatlogo.png; sourceTree = "<group>"; };
 		B2E0AADD1B9FBE7F00D10DBD /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = Graphics/arrow.png; sourceTree = "<group>"; };
 		C1AC4A3FBD3C039BB80C3229 /* libPods-itadakimasu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-itadakimasu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				B28F1B1B1B95F0D40068463D /* AppDelegate.swift */,
-				B2E0AAD91B976A8500D10DBD /* NavigationBarAppearance.swift */,
 				B28F1B1D1B95F0D40068463D /* ViewController.swift */,
 				B2E082541BA2340F00D3D3CC /* BusinessInformationViewController.swift */,
 				B252D4CF1B9FE0CF00F30314 /* Business.swift */,
@@ -320,7 +317,6 @@
 				B2E082551BA2340F00D3D3CC /* BusinessInformationViewController.swift in Sources */,
 				B252D4D01B9FE0CF00F30314 /* Business.swift in Sources */,
 				B28F1B1C1B95F0D40068463D /* AppDelegate.swift in Sources */,
-				B2E0AADA1B976A8500D10DBD /* NavigationBarAppearance.swift in Sources */,
 				B252D4D21B9FE0F300F30314 /* YelpAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
