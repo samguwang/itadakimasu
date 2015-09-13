@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6C508D0C91506722FCEDCA75 /* libPods-itadakimasu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AC4A3FBD3C039BB80C3229 /* libPods-itadakimasu.a */; };
+		B222987F1BA5E06500F86DC5 /* BusinessAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B222987E1BA5E06500F86DC5 /* BusinessAnnotation.swift */; };
+		B22298811BA5E9A100F86DC5 /* MapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22298801BA5E9A100F86DC5 /* MapViewExtension.swift */; };
 		B252D4CE1B9FCBE500F30314 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B252D4CD1B9FCBE500F30314 /* Launch Screen.xib */; };
 		B252D4D01B9FE0CF00F30314 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = B252D4CF1B9FE0CF00F30314 /* Business.swift */; };
 		B252D4D21B9FE0F300F30314 /* YelpAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B252D4D11B9FE0F300F30314 /* YelpAPIClient.swift */; };
@@ -40,6 +42,8 @@
 		11DBBD5D40714460D176D7E1 /* Pods-itadakimasu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-itadakimasu.release.xcconfig"; path = "Pods/Target Support Files/Pods-itadakimasu/Pods-itadakimasu.release.xcconfig"; sourceTree = "<group>"; };
 		1B945EEF48E423CDE62F15DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A8BA525B56E005E6313189E /* Pods-itadakimasu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-itadakimasu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-itadakimasu/Pods-itadakimasu.debug.xcconfig"; sourceTree = "<group>"; };
+		B222987E1BA5E06500F86DC5 /* BusinessAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessAnnotation.swift; sourceTree = "<group>"; };
+		B22298801BA5E9A100F86DC5 /* MapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewExtension.swift; sourceTree = "<group>"; };
 		B252D4CD1B9FCBE500F30314 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		B252D4CF1B9FE0CF00F30314 /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		B252D4D11B9FE0F300F30314 /* YelpAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpAPIClient.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				B28F1B1B1B95F0D40068463D /* AppDelegate.swift */,
 				B28F1B1D1B95F0D40068463D /* ViewController.swift */,
 				B2E082541BA2340F00D3D3CC /* BusinessInformationViewController.swift */,
+				B22298801BA5E9A100F86DC5 /* MapViewExtension.swift */,
+				B222987E1BA5E06500F86DC5 /* BusinessAnnotation.swift */,
 				B252D4CF1B9FE0CF00F30314 /* Business.swift */,
 				B252D4D11B9FE0F300F30314 /* YelpAPIClient.swift */,
 				B28F1B1F1B95F0D40068463D /* Main.storyboard */,
@@ -315,8 +321,10 @@
 			files = (
 				B28F1B1E1B95F0D40068463D /* ViewController.swift in Sources */,
 				B2E082551BA2340F00D3D3CC /* BusinessInformationViewController.swift in Sources */,
+				B22298811BA5E9A100F86DC5 /* MapViewExtension.swift in Sources */,
 				B252D4D01B9FE0CF00F30314 /* Business.swift in Sources */,
 				B28F1B1C1B95F0D40068463D /* AppDelegate.swift in Sources */,
+				B222987F1BA5E06500F86DC5 /* BusinessAnnotation.swift in Sources */,
 				B252D4D21B9FE0F300F30314 /* YelpAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
