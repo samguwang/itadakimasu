@@ -16,9 +16,11 @@ class BusinessInformationViewController: ViewController {
     
     var Loc: CLLocation?
     var businesses: [Business]!
-    let regionRadius: CLLocationDistance = 1000
+    let regionRadius: CLLocationDistance = 500
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var businessNameLabel: UILabel!
+    @IBOutlet weak var yelpStarRatingImage: UIImageView!
     
     override func viewDidLoad() {
         //Set Nav Bar title text and edit font style of leftbar button in navbar
@@ -48,12 +50,13 @@ class BusinessInformationViewController: ViewController {
     //method used to pick yelp business
     func businessPicker(businessList: [Business]) -> Business {
         var randomIndex = Int(arc4random_uniform(UInt32(businessList.endIndex)))
-        println(randomIndex)
+        
         return businessList[randomIndex]
     }
     
     //method used to display information in view
     func displayBusinessInformation(business: Business) {
+        
         //map annotation for business after converting address to coordinate
         var convertCoord: CLLocation?
         var geocoder = CLGeocoder()
@@ -71,6 +74,9 @@ class BusinessInformationViewController: ViewController {
             }
         }
         
+        let data = NSData(contentsOfURL: business.ratingImageURL!)
+        self.yelpStarRatingImage.image = UIImage(data: data!)
+        self.businessNameLabel.text = business.name!
         self.loadingIndicator.hidden = true
         self.loadingIndicator.stopAnimating()
         self.mapView.hidden = false
