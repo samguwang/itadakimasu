@@ -26,12 +26,14 @@ class BusinessInformationViewController: ViewController {
         self.loadingIndicator.startAnimating()
         self.mapView.hidden = true
         self.mapView.showsUserLocation = true
-        centerMapOnLocation(self.Loc!)
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        callyelp("food", searchLimit: 10, searchLocation: self.Loc!, category: "restaurants", searchRadius: 2000)
-
+        
+        //check if location is nil so application doesn't crash in case where it is nil
+        if self.Loc?.coordinate != nil {
+            centerMapOnLocation(self.Loc!)
+            callyelp("food", searchLimit: 10, searchLocation: self.Loc!, category: "restaurants", searchRadius: 2000)
+        } else {
+            displayError("Can't Find Your Location", error: "")
+        }
     }
     
     //helper method to call yelpAPI with yelpAPIClient and Business class
@@ -71,6 +73,15 @@ class BusinessInformationViewController: ViewController {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
             regionRadius * 2.0, regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: true)
+    }
+    
+    /* general helper function for error to prompt user with an alert */
+    func displayError(alertTitle: String, error: String) {
+        let alert = UIAlertView()
+        alert.title = alertTitle
+        alert.message = error
+        alert.addButtonWithTitle("OK")
+        alert.show()
     }
     
     func delay(delay:Double, closure:()->()) {
