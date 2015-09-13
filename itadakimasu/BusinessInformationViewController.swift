@@ -16,9 +16,9 @@ class BusinessInformationViewController: ViewController {
     
     var Loc: CLLocation?
     var businesses: [Business]!
+    let regionRadius: CLLocationDistance = 1000
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var mapView: MKMapView!
-    let regionRadius: CLLocationDistance = 200
     
     override func viewDidLoad() {
         //Set Nav Bar title text and edit font style of leftbar button in navbar
@@ -41,12 +41,6 @@ class BusinessInformationViewController: ViewController {
         Business.searchByLocationRatingDistance(searchTerm, limit: searchLimit, Lat: searchLocation.coordinate.latitude, Long: searchLocation.coordinate.longitude, sort: 0, categories: category, radius_filter: searchRadius, completion: { (businesses: [Business]!, error: NSError!) -> Void in
             self.businesses = businesses
             println("calling callAPI function")
-//            let top = businesses.endIndex
-//            let ran = self.randRange(0, upper: top)
-//            var selectedBusiness = businesses[ran]
-//            let businame = selectedBusiness.name!
-//            println(businame)
-           // println(selectedBusiness.ratingImageURL)
             self.displayBusinessInformation(self.businessPicker(self.businesses))
         })
     }
@@ -58,15 +52,29 @@ class BusinessInformationViewController: ViewController {
         return businessList[randomIndex]
     }
     
-    
     //method used to display information in view
     func displayBusinessInformation(business: Business) {
-        println(business.name)
-        println(business.ratingImageURL)
+        //map annotation for business after converting address to coordinate
+        var convertCoord: CLLocation?
+        var geocoder = CLGeocoder()
+        
+        geocoder.geocodeAddressString(business.address!) {
+            if let placemarks = $0 {
+                convertCoord = placemarks[0].location
+
+                let annot = BusinessAnnotation(title: business.name!, locationName: business.address!, discipline: "Business", coordinate: convertCoord!.coordinate)
+                self.mapView.addAnnotation(annot)
+                self.mapView.delegate = self
+                
+            } else {
+                println($1)
+            }
+        }
         
         self.loadingIndicator.hidden = true
         self.loadingIndicator.stopAnimating()
         self.mapView.hidden = false
+        
     }
     
     func centerMapOnLocation(location: CLLocation) {
@@ -94,3 +102,8 @@ class BusinessInformationViewController: ViewController {
     }
     
 }
+
+
+
+
+

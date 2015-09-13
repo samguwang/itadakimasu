@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZ0-QQ-hPH">
@@ -200,6 +200,7 @@
                         <viewControllerLayoutGuide type="bottom" id="6Lg-WR-Qax"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lUw-7n-hs2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="0bz-YA-8ef">
@@ -248,36 +249,64 @@
                                     </mask>
                                 </variation>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Love Balls" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxS-50-h46">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="386" width="277" height="89"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oVo-j8-dBV">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="483" width="108" height="38"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="VxS-50-h46" secondAttribute="centerX" constant="33" id="BMB-9f-1ta"/>
+                            <constraint firstItem="VxS-50-h46" firstAttribute="leading" secondItem="lUw-7n-hs2" secondAttribute="leadingMargin" id="M9l-9h-EOd"/>
                             <constraint firstAttribute="centerY" secondItem="0bz-YA-8ef" secondAttribute="centerY" constant="-0.5" id="QOt-Hu-Wdb"/>
                             <constraint firstAttribute="centerX" secondItem="cBs-Or-OXX" secondAttribute="centerX" id="gJy-3b-2qK"/>
                             <constraint firstItem="cBs-Or-OXX" firstAttribute="top" secondItem="PLM-SN-KvU" secondAttribute="bottom" id="jfJ-mO-FDr"/>
                             <constraint firstAttribute="centerX" secondItem="0bz-YA-8ef" secondAttribute="centerX" constant="0.5" id="l8d-tr-ybR"/>
+                            <constraint firstItem="VxS-50-h46" firstAttribute="top" secondItem="cBs-Or-OXX" secondAttribute="bottom" constant="8" id="lNR-32-S26"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="0bz-YA-8ef"/>
                                 <exclude reference="cBs-Or-OXX"/>
+                                <exclude reference="VxS-50-h46"/>
+                                <exclude reference="oVo-j8-dBV"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="gJy-3b-2qK"/>
-                                <exclude reference="jfJ-mO-FDr"/>
+                                <exclude reference="BMB-9f-1ta"/>
+                                <exclude reference="M9l-9h-EOd"/>
+                                <exclude reference="lNR-32-S26"/>
                                 <exclude reference="QOt-Hu-Wdb"/>
                                 <exclude reference="l8d-tr-ybR"/>
+                                <exclude reference="gJy-3b-2qK"/>
+                                <exclude reference="jfJ-mO-FDr"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="0bz-YA-8ef"/>
                                 <include reference="cBs-Or-OXX"/>
+                                <include reference="VxS-50-h46"/>
+                                <include reference="oVo-j8-dBV"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="gJy-3b-2qK"/>
-                                <include reference="jfJ-mO-FDr"/>
+                                <include reference="BMB-9f-1ta"/>
+                                <include reference="M9l-9h-EOd"/>
+                                <include reference="lNR-32-S26"/>
                                 <include reference="QOt-Hu-Wdb"/>
                                 <include reference="l8d-tr-ybR"/>
+                                <include reference="gJy-3b-2qK"/>
+                                <include reference="jfJ-mO-FDr"/>
                             </mask>
                         </variation>
                     </view>
