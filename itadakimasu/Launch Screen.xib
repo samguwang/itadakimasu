@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ITADAKIMASU" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ITADAKIMASU" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
                     <rect key="frame" x="20" y="140" width="441" height="43"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="43" id="355-ZL-xoW"/>
@@ -99,8 +99,6 @@
                     <exclude reference="ou0-lm-hRc"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="gHx-HW-hNM"/>
-                    <exclude reference="ia3-cT-X39"/>
                     <exclude reference="BPS-fT-KBO"/>
                     <exclude reference="JQs-5w-PhE"/>
                     <exclude reference="Mph-j4-aNf"/>
@@ -109,6 +107,8 @@
                     <exclude reference="kFU-fA-iau"/>
                     <exclude reference="rf0-Ic-fUC"/>
                     <exclude reference="vdz-6b-yso"/>
+                    <exclude reference="gHx-HW-hNM"/>
+                    <exclude reference="ia3-cT-X39"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular">
@@ -116,11 +116,6 @@
                     <include reference="ou0-lm-hRc"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="Kid-kn-2rF"/>
-                    <exclude reference="Koa-jz-hwk"/>
-                    <exclude reference="fvb-Df-36g"/>
-                    <include reference="gHx-HW-hNM"/>
-                    <include reference="ia3-cT-X39"/>
                     <include reference="BPS-fT-KBO"/>
                     <exclude reference="JQs-5w-PhE"/>
                     <exclude reference="Mph-j4-aNf"/>
@@ -129,6 +124,11 @@
                     <include reference="kFU-fA-iau"/>
                     <exclude reference="rf0-Ic-fUC"/>
                     <include reference="vdz-6b-yso"/>
+                    <exclude reference="Kid-kn-2rF"/>
+                    <exclude reference="Koa-jz-hwk"/>
+                    <exclude reference="fvb-Df-36g"/>
+                    <include reference="gHx-HW-hNM"/>
+                    <include reference="ia3-cT-X39"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="404" y="445"/>

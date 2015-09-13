@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //customize navbar appearance
         var appearance = UINavigationBar.appearance()
         appearance.barTintColor = UIColor(red: 235/255, green: 116/255, blue: 57/255, alpha: 1)
-        appearance.titleTextAttributes = [NSFontAttributeName: UIFont(name: "futura-medium", size: 24)!,  NSForegroundColorAttributeName: UIColor.whiteColor()]
+        appearance.titleTextAttributes = [NSFontAttributeName: UIFont(name: "avenir-medium", size: 24)!,  NSForegroundColorAttributeName: UIColor.whiteColor()]
         appearance.translucent = false
         appearance.barStyle = UIBarStyle.Black
         appearance.tintColor = UIColor.whiteColor()

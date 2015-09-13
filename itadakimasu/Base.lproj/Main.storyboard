@@ -201,12 +201,94 @@
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lUw-7n-hs2">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="0bz-YA-8ef">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="32W-2H-JdZ"/>
+                                    <constraint firstAttribute="height" constant="20" id="aYX-7N-Keo"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="32W-2H-JdZ"/>
+                                        <exclude reference="aYX-7N-Keo"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="32W-2H-JdZ"/>
+                                        <include reference="aYX-7N-Keo"/>
+                                    </mask>
+                                </variation>
+                            </activityIndicatorView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cBs-Or-OXX">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="4cB-OH-MzE"/>
+                                    <constraint firstAttribute="height" constant="314" id="6fi-xO-slP"/>
+                                    <constraint firstAttribute="height" constant="338" id="M4G-fT-XlT"/>
+                                    <constraint firstAttribute="height" constant="271" id="i06-rZ-BX0">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="338"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4cB-OH-MzE"/>
+                                        <exclude reference="6fi-xO-slP"/>
+                                        <exclude reference="M4G-fT-XlT"/>
+                                        <exclude reference="i06-rZ-BX0"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4cB-OH-MzE"/>
+                                        <include reference="6fi-xO-slP"/>
+                                        <exclude reference="M4G-fT-XlT"/>
+                                        <exclude reference="i06-rZ-BX0"/>
+                                    </mask>
+                                </variation>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="0bz-YA-8ef" secondAttribute="centerY" constant="-0.5" id="QOt-Hu-Wdb"/>
+                            <constraint firstAttribute="centerX" secondItem="cBs-Or-OXX" secondAttribute="centerX" id="gJy-3b-2qK"/>
+                            <constraint firstItem="cBs-Or-OXX" firstAttribute="top" secondItem="PLM-SN-KvU" secondAttribute="bottom" id="jfJ-mO-FDr"/>
+                            <constraint firstAttribute="centerX" secondItem="0bz-YA-8ef" secondAttribute="centerX" constant="0.5" id="l8d-tr-ybR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="0bz-YA-8ef"/>
+                                <exclude reference="cBs-Or-OXX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="gJy-3b-2qK"/>
+                                <exclude reference="jfJ-mO-FDr"/>
+                                <exclude reference="QOt-Hu-Wdb"/>
+                                <exclude reference="l8d-tr-ybR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="0bz-YA-8ef"/>
+                                <include reference="cBs-Or-OXX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="gJy-3b-2qK"/>
+                                <include reference="jfJ-mO-FDr"/>
+                                <include reference="QOt-Hu-Wdb"/>
+                                <include reference="l8d-tr-ybR"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="0bz-YA-8ef" id="ipm-uP-Nm1"/>
+                        <outlet property="mapView" destination="cBs-Or-OXX" id="YC8-yL-Udn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efe-Fz-f8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1276.5" y="361.5"/>
+            <point key="canvasLocation" x="1275.75" y="361.125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RtU-PF-ohF">

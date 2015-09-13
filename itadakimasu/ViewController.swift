@@ -47,11 +47,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         println(error)
     }
     
-    
-    func randRange (lower: Int , upper: Int) -> Int {
-        return lower + Int(arc4random_uniform(UInt32(upper - lower + 1)))
-    }
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let destVC = segue.destinationViewController as! BusinessInformationViewController
         destVC.Loc = self.currentLocation
