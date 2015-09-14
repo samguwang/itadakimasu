@@ -17,10 +17,14 @@ class BusinessInformationViewController: ViewController {
     var Loc: CLLocation?
     var businesses: [Business]!
     let regionRadius: CLLocationDistance = 500
+    var businessURL: NSURL!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var businessNameLabel: UILabel!
     @IBOutlet weak var yelpStarRatingImage: UIImageView!
+    @IBOutlet weak var reviewCountLabel: UILabel!
+    @IBOutlet weak var categoriesLabel: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
     
     override func viewDidLoad() {
         //Set Nav Bar title text and edit font style of leftbar button in navbar
@@ -74,9 +78,14 @@ class BusinessInformationViewController: ViewController {
             }
         }
         
+        self.businessURL = business.mobileUrl!
         let data = NSData(contentsOfURL: business.ratingImageURL!)
         self.yelpStarRatingImage.image = UIImage(data: data!)
+        let str = "\(business.reviewCount!)" + " Reviews"
+        self.reviewCountLabel.text = str
+        self.categoriesLabel.text = business.categories!
         self.businessNameLabel.text = business.name!
+        self.distanceLabel.text = business.distance!
         self.loadingIndicator.hidden = true
         self.loadingIndicator.stopAnimating()
         self.mapView.hidden = false
@@ -89,6 +98,17 @@ class BusinessInformationViewController: ViewController {
         mapView.setRegion(coordinateRegion, animated: true)
     }
     
+    @IBAction func refreshRestaurant(sender: AnyObject) {
+        self.mapView.removeAnnotations(self.mapView.annotations)
+        displayBusinessInformation(businessPicker(self.businesses))
+    }
+    
+    @IBAction func openInYelp(sender: AnyObject) {
+        if(UIApplication.sharedApplication().canOpenURL(self.businessURL)){
+            UIApplication.sharedApplication().openURL(self.businessURL)
+        }
+    }
+
     /* general helper function for error to prompt user with an alert */
     func displayError(alertTitle: String, error: String) {
         let alert = UIAlertView()

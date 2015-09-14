@@ -74,7 +74,7 @@
                     </variation>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.59682765149999994" green="0.59682765149999994" blue="0.59682765149999994" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="kId-c2-rCX" secondAttribute="trailing" constant="19" id="4C3-KZ-xDb"/>
                 <constraint firstItem="ou0-lm-hRc" firstAttribute="top" secondItem="kId-c2-rCX" secondAttribute="bottom" constant="-21" id="BPS-fT-KBO"/>
@@ -101,10 +101,6 @@
                     <exclude reference="ou0-lm-hRc"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="4C3-KZ-xDb"/>
-                    <exclude reference="LY2-dO-RMb"/>
-                    <exclude reference="gHx-HW-hNM"/>
-                    <exclude reference="ia3-cT-X39"/>
                     <exclude reference="BPS-fT-KBO"/>
                     <exclude reference="JQs-5w-PhE"/>
                     <exclude reference="Mph-j4-aNf"/>
@@ -113,6 +109,10 @@
                     <exclude reference="kFU-fA-iau"/>
                     <exclude reference="rf0-Ic-fUC"/>
                     <exclude reference="vdz-6b-yso"/>
+                    <exclude reference="4C3-KZ-xDb"/>
+                    <exclude reference="LY2-dO-RMb"/>
+                    <exclude reference="gHx-HW-hNM"/>
+                    <exclude reference="ia3-cT-X39"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular">
@@ -120,13 +120,6 @@
                     <include reference="ou0-lm-hRc"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="4C3-KZ-xDb"/>
-                    <exclude reference="Kid-kn-2rF"/>
-                    <exclude reference="Koa-jz-hwk"/>
-                    <include reference="LY2-dO-RMb"/>
-                    <exclude reference="fvb-Df-36g"/>
-                    <include reference="gHx-HW-hNM"/>
-                    <include reference="ia3-cT-X39"/>
                     <include reference="BPS-fT-KBO"/>
                     <exclude reference="JQs-5w-PhE"/>
                     <exclude reference="Mph-j4-aNf"/>
@@ -135,6 +128,13 @@
                     <include reference="kFU-fA-iau"/>
                     <exclude reference="rf0-Ic-fUC"/>
                     <include reference="vdz-6b-yso"/>
+                    <include reference="4C3-KZ-xDb"/>
+                    <exclude reference="Kid-kn-2rF"/>
+                    <exclude reference="Koa-jz-hwk"/>
+                    <include reference="LY2-dO-RMb"/>
+                    <exclude reference="fvb-Df-36g"/>
+                    <include reference="gHx-HW-hNM"/>
+                    <include reference="ia3-cT-X39"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="404" y="445"/>
