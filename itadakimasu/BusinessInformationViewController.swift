@@ -18,6 +18,7 @@ class BusinessInformationViewController: ViewController {
     var businesses: [Business]!
     let regionRadius: CLLocationDistance = 500
     var businessURL: NSURL!
+    var numbers: [Int] = []
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var businessNameLabel: UILabel!
@@ -36,7 +37,7 @@ class BusinessInformationViewController: ViewController {
         //check if location is nil so application doesn't crash in case where it is nil
         if self.Loc?.coordinate != nil {
             centerMapOnLocation(self.Loc!)
-            callyelp("food", searchLimit: 10, searchLocation: self.Loc!, category: "restaurants", searchRadius: 2000)
+            callyelp("food", searchLimit: 20, searchLocation: self.Loc!, category: "restaurants", searchRadius: 2000)
         } else {
             displayError("Can't Find Your Location", error: "")
         }
@@ -44,18 +45,21 @@ class BusinessInformationViewController: ViewController {
     
     //helper method to call yelpAPI with yelpAPIClient and Business class
     func callyelp(searchTerm: String, searchLimit: Int, searchLocation: CLLocation, category: String, searchRadius: Int){
-        Business.searchByLocationRatingDistance(searchTerm, limit: searchLimit, Lat: searchLocation.coordinate.latitude, Long: searchLocation.coordinate.longitude, sort: 0, categories: category, radius_filter: searchRadius, completion: { (businesses: [Business]!, error: NSError!) -> Void in
+        Business.searchByLocationRatingDistance(searchTerm, limit: searchLimit, Lat: searchLocation.coordinate.latitude, Long: searchLocation.coordinate.longitude, sort: 1, categories: category, radius_filter: searchRadius, completion: { (businesses: [Business]!, error: NSError!) -> Void in
             self.businesses = businesses
             println("calling callAPI function")
             self.displayBusinessInformation(self.businessPicker(self.businesses))
         })
     }
     
-    //method used to pick yelp business
+    //method used to pick yelp business, avoid duplicates as well
     func businessPicker(businessList: [Business]) -> Business {
-        var randomIndex = Int(arc4random_uniform(UInt32(businessList.endIndex)))
-        
-        return businessList[randomIndex]
+        if numbers.count == 0 {
+            numbers = Array(0 ... businessList.count - 1)
+        }
+        var randomIndex = Int(arc4random_uniform(UInt32(numbers.count)))
+        var ran = numbers.removeAtIndex(randomIndex)
+        return businessList[ran]
     }
     
     //method used to display information in view
