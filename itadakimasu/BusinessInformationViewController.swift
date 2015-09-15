@@ -47,7 +47,7 @@ class BusinessInformationViewController: ViewController {
     func callyelp(searchTerm: String, searchLimit: Int, searchLocation: CLLocation, category: String, searchRadius: Int){
         Business.searchByLocationRatingDistance(searchTerm, limit: searchLimit, Lat: searchLocation.coordinate.latitude, Long: searchLocation.coordinate.longitude, sort: 1, categories: category, radius_filter: searchRadius, completion: { (businesses: [Business]!, error: NSError!) -> Void in
             self.businesses = businesses
-            println("calling callAPI function")
+            println("calling Yelp API function")
             self.displayBusinessInformation(self.businessPicker(self.businesses))
         })
     }
@@ -70,6 +70,7 @@ class BusinessInformationViewController: ViewController {
         var geocoder = CLGeocoder()
         
         geocoder.geocodeAddressString(business.address!) {
+            self.mapView.removeAnnotations(self.mapView.annotations)
             if let placemarks = $0 {
                 convertCoord = placemarks[0].location
 
@@ -103,7 +104,7 @@ class BusinessInformationViewController: ViewController {
     }
     
     @IBAction func refreshRestaurant(sender: AnyObject) {
-        self.mapView.removeAnnotations(self.mapView.annotations)
+        //self.mapView.removeAnnotations(self.mapView.annotations)
         displayBusinessInformation(businessPicker(self.businesses))
     }
     
