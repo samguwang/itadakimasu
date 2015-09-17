@@ -90,6 +90,7 @@ class BusinessInformationViewController: ViewController {
         self.reviewCountLabel.text = str
         self.categoriesLabel.text = business.categories!
         self.businessNameLabel.text = business.name!
+        self.businessNameLabel.numberOfLines = 2
         self.distanceLabel.text = business.distance!
         self.loadingIndicator.hidden = true
         self.loadingIndicator.stopAnimating()
